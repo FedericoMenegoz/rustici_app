@@ -1,0 +1,22 @@
+# Rust 
+/target
+.cargo
+
+# MacOs
+.DS_Store
+
+# Remove Cargo.lock from gitignore if creating an executable, leave it for libraries
+# More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+Cargo.lock
+
+# # learning tables 
+q_table.txt
+custom_q_table.txt
+
+# script and binaries 
+*.sh
+build_project
+rustici_app
+my_main.rs
+*.exe
+*.out

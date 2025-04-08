@@ -1,0 +1,73 @@
+[package]
+name = "rustici_project"
+version = "0.1.0"
+edition = "2021"
+
+# AI logic and visualizer
+[lib]
+name = "ai"
+path = "src/lib/mod.rs"
+[[bin]]
+name = "visualizer_1"
+path = "src/visualizer_1/main.rs"
+[[bin]]
+name = "visualizer_2"
+path = "src/visualizer_2/main.rs"
+
+# Entry point, trainer and build helper
+[[bin]]
+name = "entry_point"
+path = "src/main.rs"
+[[bin]]
+name = "trainer"
+path = "src/trainer.rs"
+[[bin]]
+name = "build_project"
+path = "src/build_project.rs"
+
+
+[dependencies]
+
+# Robotic-Lib Advance Programming
+robotics_lib = { version = "0.1.21", registry = "kellnr" }
+
+# world generator 
+who_needs_gv_world_generator = { version = "*", registry = "kellnr" }
+
+# tools
+oxagaudiotool = { version = "*", registry = "kellnr" }
+recycle_by_ifrustrati = { version = "*", registry = "kellnr" }
+rust_eze_spotlight = { version = "*", registry = "kellnr" }
+rust_eze_tomtom = { version = "*", registry = "kellnr" }
+swift_seller = { version = "*", registry = "kellnr" }
+# charting_tools = { version = "*", registry = "kellnr" }
+charting_tools = { path = "../Charting-Tools" }
+who_needs_gv_street_explorer = { version = "*", registry = "kellnr" }
+
+# crates used by AI
+ordered-float = "*"
+
+# bevy
+bevy = "0.12.1"
+
+# utils
+lazy_static = "1.4.0"
+rand = "0.8.5"
+text_io = "0.1.12"
+ron = "0.8"
+serde = { version = "1", features = ["derive"] }
+
+#macroquad
+macroquad = "*"
+
+# Rustici Planner and World Generator for Demo purpose
+rustici_planner = { version = "*", registry = "kellnr" }
+rustici_world_generator = { version = "*", registry = "kellnr" }
+
+# Enable a small amount of optimization in debug mode
+[profile.dev]
+opt-level = 1
+
+# Enable high optimizations for dependencies (incl. Bevy), but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
