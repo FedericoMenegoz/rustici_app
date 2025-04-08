@@ -5,9 +5,9 @@
 Welcome to the Rustici Project!
 
 ## Group Members
-- Federico Menegoz (WG) 228394
-- Salvatore Gilles Cassarà 227202
-- Alberto Cimmino 226899
+- Federico Menegoz (WG)
+- Salvatore Gilles Cassarà 
+- Alberto Cimmino 
 
 ## Building and Running the App
 
@@ -15,7 +15,7 @@ Welcome to the Rustici Project!
 - Run the `rustici_app`
 - Follow the prompts and enjoy!
 
-## AI (Salvatore Gilles Cassarà 227202)
+## AI (Salvatore Gilles Cassarà)
 
 The brain of our robot: an AI created using reinforcement learning.
 In particular, it uses the q-learning algorithm which, given a set of states the robot can be in, a set of actions it can execute and a reward function that rewards the correct actions made by the robot, tries the best way to concatenate states and actions in order to reach its goal: make money.
@@ -33,7 +33,7 @@ Where:
 
 Through training, these values are optimized, improving the AI's performance.
 
-## Visualizer 1 (Federico Menegoz (WG) 228394)
+## Visualizer 1 (Federico Menegoz)
 
 Visualizer that either showcases a pre-trained robot completing its mission or allows you to train a robot by fine-tuning the rewards of the q-learning algorithm. Developed using Bevy Game Engine.
 
@@ -80,7 +80,7 @@ In the [Tool & WG], you can click on 'Test!':
 - 'SPACE': Zoom In
 - '-': Zoom Out
 
-## Visualizer 2 (Alberto Cimmino 226899)
+## Visualizer 2 (Alberto Cimmino)
 
 This is a visualizer that showcases a pre-trained robot completing its mission. It was developed using the crate Macroquad. It's a 3D enviorement with 2D sprites.
 
