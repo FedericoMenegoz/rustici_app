@@ -1,3 +1,5 @@
+>Note: This project is shared publicly to show the source code. It won't build due to private dependencies. :(
+
 # Rustici Project
 
 Welcome to the Rustici Project!
